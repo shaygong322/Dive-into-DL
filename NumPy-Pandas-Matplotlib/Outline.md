@@ -85,9 +85,9 @@ s
 alpha
 ## 8 Bar Charts
 ### 8.1 Creating Bar Charts
-.bar(nparray, nparray)
+.bar(ndarray, ndarray)
 ### 8.2 Horizontal Bar Chart
-.barh(nparray, nparray)
+.barh(ndarray, ndarray)
 ### 8.3 Bar Chart Colors
 ### 8.4 Bar Width (.bar())
 ### 8.5 Bar Height (.barh())
@@ -100,7 +100,7 @@ plt.hist(x)
 ### 10.1 Creating a Pie Chart
 .pie(nparray)
 ### 10.2 Labels
-.plt.pie(nparray, labels=list)
+.plt.pie(ndarray, labels=list)
 ### 10.3 Starting Angle
 .pie(startangle=90)
 ### 10.4 Explode
