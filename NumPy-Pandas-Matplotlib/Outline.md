@@ -98,7 +98,7 @@ plt.hist(x)
 ```
 ## 10. Pie Chart
 ### 10.1 Creating a Pie Chart
-.pie(nparray)
+.pie(ndarray)
 ### 10.2 Labels
 .plt.pie(ndarray, labels=list)
 ### 10.3 Starting Angle
