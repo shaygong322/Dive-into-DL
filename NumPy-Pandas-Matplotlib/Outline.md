@@ -113,5 +113,43 @@ plt.pie(colors=List)
 plt.legend()
 #### Legend with title
 plt.legend(title="Four Fruits")
+## 11 Width & Height & savefig
 
-## 10 Width & Height & savefig
+# NumPy
+## 1 ndarray
+### 1.1 create an ndarray object
+### 1.2 array dimension
+attribute: .ndim
+### 1.3 array index
+### 1.4 array slice
+## 2 Data Types
+### 2.1 Check
+attribute: .dtype
+### 2.2 Converting
+arr = np.array(['1', '2', '3'], dtype='i')  
+or  
+arr = np.array([1.1, 2.1, 3.1])  
+newarr = arr.astype('i')
+## 3 Copy vs View
+according to attribute: .base
+## 4 Shape
+attribute: .shape  
+function: .reshape() --> return a view
+## 5 Operation
+### 5.1 Iteration
+for loop  
+nditer()  
+ndenumerate()
+### 5.2 Concatenation
+### 5.3 Splitting
+array_split()  
+split() # have to be equal division  
+hsplit()
+### 5.4 Array Search
+.where()  
+.searchsorted() and multiple values
+### 5.5 Array Sorting
+### 5.6 Array Filtering
+filter  
+create filter array  
+directly create filters from arrays
