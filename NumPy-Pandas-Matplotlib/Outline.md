@@ -153,3 +153,70 @@ hsplit()
 filter  
 create filter array  
 directly create filters from arrays
+
+# Pandas
+## 1 Object Creation
+pd.Series([])  
+pd.DataFrame({})  
+pd.data_range('20130101', periods)  
+pd.DataFrame(data, index=, columns=list('ABCD'))
+## 2 Viewing Data
+df.dtypes  
+df.head()  
+df.tail()  
+df.index  
+df.columns  
+df.describe()
+## 3 Sorting
+df.sort_index(axis=1, ascending=False) # column name  
+df.sort_values(by='B')
+## 4 Selecting Data
+df['A']  
+df[1:3]  
+df['2013-01-02':'2013-01-04']
+### 4.1 Selecting by Label
+.loc[]  
+.at[] # getting a scalar value
+### 4.2 Selecting by Position
+.iloc[]  
+.iat[]
+### 4.3 Boolean Indexing
+df[df['B'] > 0]  
+df[df > 0]  
+.isin()
+## 5 Setting Values
+df['F'] = s1  
+df.at['2013-01-01', 'A'] = 0  
+df.iat[0, 2] = 0  
+df.loc[:, 'D'] = np.array([5] * len(df))  
+df3[df3 < 0] = 0
+## 6 Handling Missing Data
+reindexing and .dropna(): how='any'/'all'  
+.fillna(value=5)  
+.isna(df)
+## 7 Operations
+### 7.1 Arithmetic
+### 7.2 Comparison
+### 7.3 Statistical
+.mean()  
+.cumsum()  
+### 7.4 .concat([df1, df2])
+### 7.5 .merge(left, right, on='key')
+### 7.6 Append (has been deprecated)
+### 7.7 Group
+df.groupby('A').sum()  
+df.groupby(['A', 'B']).sum()
+## 8 Pivot Table
+pd.pivot_table(df, values='D', index=['A', 'B'], columns=['C'])
+## 9 Time Series
+ts.resample('5Min').sum()  
+ts.tz_localize('UTC')  
+ts.to_period()  
+## 10 Visualization
+df.plot()  
+plt.figure() + df.plot() + plt.legend(loc='best')
+## 11 Data Input/Output
+### 11.1 CSV
+df.to_csv('foo.csv') + pd.read_csv('foo.csv')
+### 11.2 HDFS
+### 11.3 Excel
