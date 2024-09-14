@@ -6,4 +6,8 @@
 + Tensor 的类型转换（主要是 NumPy）
 + Tensor on GPU
 
-[Data-Preprocessing](Data-Preprocessing.ipynb)
+[Data-Preprocessing](Data-Preprocessing.ipynb) 参考原书，数据预处理
++ 创建 csv 文件
++ 读取 csv 文件
++ 缺失值处理
++ 转换成 Tensor
